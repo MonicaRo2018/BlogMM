@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 lang="en">
+  <meta name="description" content="First page of my new blog">
+  <meta name="keywords" content="blog, neuron, ganduri">
+  <meta name="author" content="Monica M">
+  <title>Prima pagina Blog</title>
+  <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+  <header>
+  <div class="header-right">
+<nav>
+  <ul id="lista_nav">
+    <li>
+      <a href="main.html" title="home">Prima pagina</a>
+    </li>
+    <li>
+      <a href="pagina2.html" title="about_me">Despre mine</a>
+    </li>
+    <li>
+      <a href="pagina3.html" title="articol">Articolul săptămânii</a>
+    </li>
+    <li>
+      <a href="pagina4.html" title="colaboratori">Colaboratorii mei</a>
+    </li>
+    <li>
+      <a href="pagina5.html" title="contact">Scrie-mi!</a>
+    </li>
+  </ul>
+</nav>
+</div>
+</header>
+<br></br>
+  <h1 class="styleh1">
+  Echilibristica printre sinapse
+</h1>
+<h2 class="styleh2">
+  sau despre gânduri, neuroni, zâmbete și fluturi
+</h2>
+
+</div>
+
+
+<div>
+<section class="primaSectiune">
+  <p>Bun venit în mica mea lume cu o singură regulă – jocul cu sinapse. Dacă te pasionează neuroștiințele, ești un profesionist în neurologie sau doar vrei să afli noutăți despre misterele creierului uman, ai ajuns în locul potrivit.
+  </p>
+  <p>
+    Te invit să:
+    <ul>
+      <li>dezbatem cele mai recente topic-uri din neurologie</li>
+      <li>împărtășim cele mai noi publicații în domeniu</li>
+      <li>ne punem întrebări și să le găsim împreună răspunsuri</li>
+      <li>rezolvăm <a href="#quiz">cazuri interactive</a> care ne stimulează gândirea outside the box. <b>Termenul limită pentru trimiterea răspunsurilor este 30 Aprilie!</b></li>
+    </ul>
+
+</section>
+<sidebar class="sidestyle">
+  <p>
+    Știai că celulele gliale sunt responsabile de aranjarea corectă a neuronilor în ansamblul creierului?
+  </p>
+  <img src="neuron.jpeg" class="center">
+  <p>
+    Citește <a href="pagina4.html" title="articol">Articolul săptămânii!</a>
+  </p>
+</sidebar>
+
+</div>
+<div>
+<section class="abtus">
+  <p>Poate te întrebi cine se află în spatele acestui blog</p>
+  <img src="Monica.jpg" class="imagineamea">
+<p class="paragraf">Eu sunt Monica, gazda ta pe acest blog, profesionist în neuroștiințe, pasionată de scris și fluturi. Acest blog face parte din portofoliul realizat în cadrul Școlii Informale IT Brașov.</p>
+<br><br><br><br></br></br></br></br>
+<p>Te invit să vizitezi și blog-urile colegilor mei:</p>
+
+<ol>
+  <li>Apetrei Mihaela</li>
+  <li>Cătălin Alexandru</li>
+  <li>Paduraru Tania</li>
+  <li><a href="https://radums.github.io/Radu/">Sebastian Radu</a></li>
+  <li><a href="https://taniaungureanu.github.io/">Ungureanu Tania</a></li>
+  <li><a href="https://apryllya.github.io">Ivan Alina</a></li>
+  <li><a href="https://levitchiv.github.io/index.html">Levitschi Vadim</a></li>
+</ol>
+
+</section>
+</div>
+<div class="container" id="quiz">
+  <p>
+    Cazul interactiv al Lunii Aprilie
+  </p>
+
+  <form>
+    <fieldset><legend>Date personale (optionale)</legend>
+     <label for="degree">Profesia</label>
+     <select name="degree" id="degree">
+     <option value="med">Profesionist in medicina</option>
+     <option value="univ">Studii superioare nemedicale</option>
+     <option value="liceu" selected="selected">Studii medii</option>
+     </select>
+     <label for="age">Varsta</label>
+     <select name="age" id="age">
+     <option value="<20">Sub 20 ani</option>
+     <option value="20-30">20-30 ani</option>
+     <option value="30-40">30-40 ani</option>
+     <option value="40-50">40-50 ani</option>
+     <option value="50-60">50-60 ani</option>
+     <option value=">60">Peste 60 ani</option>
+     </select>
+
+   </fieldset>
+<p>Pacient în vârstă de 50 ani se prezintă în serviciul UPU pentru deficit motor distal progresiv, simetric, instalat în urma unei călătorii în Africa.</p>
+<ul>
+<li><p>Care sunt primele trei întrebări de anamneză pe care le adresezi?</p>
+<textarea placeholder="trei intrebari anamneza"></textarea></li>
+<li><p>Ce investigații recomanzi? (In functie de optiuni, poti vizualiza rezultatele)</p>
+  <input type="checkbox" id="myCheck"  onclick="myFunction()">RMN cerebral
+<p id="text" style="display:none">Vezi <a href="https://emedicine.medscape.com/article/344706-overview">REZULTAT!</a></p>
+<script>
+function myFunction() {
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementById("text");
+    if (checkBox.checked == true){
+        text.style.display = "block";
+    } else {
+       text.style.display = "none";
+    }
+}
+</script>
+<input type="checkbox">Teste de laborator
+<input type="checkbox">EEG
+</li>
+<li>   <p>Completează în câmpurile de mai jos patru diagnostice diferențiale
+<table cellspacing="0">
+  <tr><td><textarea placeholder="Cel mai probabil diagnostic diferențial"></textarea></td>
+<td><textarea placeholder="Al doilea cel mai probabil diagnostic diferențial"></textarea></td></tr>
+<tr><td><textarea placeholder="Al treilea cel mai probabil diagnostic diferențial"></textarea></td>
+<td><textarea placeholder="Cel mai putin probabil diagnostic diferențial"></textarea></td></tr></tr>
+</li>
+</table>
+<li>Care e primul medicament recomandat?<br></br>
+  <input type="radio">Dexametazona <br></br>
+  <input type="radio">Imunoglobulina iv <br></br>
+  <input type="radio">Ceftriaxon <br></br>
+  <input type="radio">Pirimetamina <br></br>
+</li>
+<li><p>Diagnosticul pozitiv si evolutia</p>
+  <textarea placeholder="Diagnostic pozitiv si evolutia"></textarea></li>
+</ul>
+<p>Daca doresti feedback legat de raspunsurile tale, lasa-mi adresa ta de e-mail:</p>
+<input type="text" name="e-mail" value="Adresa e-mail">
+  <br><br>
+  <input type="submit" value="Trimite raspunsurile">
+  </div>
+<footer>
+  <p>&copy; MM 2018 </p>
+</footer>
+
+</body>
+</html>
